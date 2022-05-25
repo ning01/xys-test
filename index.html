@@ -5,12 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="./lib/bootstrap-3.4.1-dist/css/bootstrap.css"
-    />
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <!-- 头部导航 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="" />
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">播客</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Tweb Conf</a></li>
+            <li><a href="#">SuperStar</a></li>
+            <li><a href="#">Web前端</a></li>
+            <li><a href="#">关于</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <!-- 轮播图 -->
     <div
       id="carousel-example-generic"
       class="carousel slide"
@@ -25,6 +63,7 @@
         ></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
       </ol>
 
       <!-- Wrapper for slides -->
@@ -74,6 +113,32 @@
         ></span>
         <span class="sr-only">Next</span>
       </a>
+    </div>
+    <!-- 开源项目 -->
+    <div class="progect">
+      <h2>OpenSource/开源项目</h4>
+      <p>种类众多的开源项目，让你爱不释手</p>
+
+    <!-- 内容 -->
+     <div class="container">
+       <div class="col-xsm-12 col-sm-6 col-md-3"><a href="#">
+         <img src="./images/1sm.png" alt="">
+
+       </a>
+      </div>
+       <div class="col-xsm-12 col-sm-6 col-md-3"><a href="#">
+        <img src="./images/2sm.png" alt="">
+       </a>
+      </div>
+       <div class="col-xsm-12 col-sm-6 col-md-3"><a href="#">
+        <img src="./images/3sm.png" alt="">
+       </a>
+      </div>
+       <div class="col-xsm-12 col-sm-6 col-md-3"><a href="#">
+        <img src="./images/4sm.png" alt="">
+       </a>
+      </div>
+     </div>
     </div>
     <script src="./lib/js/jquery.js"></script>
     <script src="./lib/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
